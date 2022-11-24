@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(131, 100, 161));
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat' , sans-serif;
+    color: rgb(40, 86, 91);
+    font-size: 3.5em;
+    padding: 35px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+header p{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.zero{
+    background-color: rgb(239, 234, 234);
+    padding: 30px;
+    display: flex;
+    width: 90%;
+    border-radius: 25px;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(40, 86, 91,0.75);
+}
+
+.first img{
+    height: 46vh;
+    width: 66vh;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 10px rgb(107, 74, 169));
+}
+
+.second {
+    word-wrap: break-word;
+    margin: 20px;
+    width: 60%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+}
+
+#nickname{
+    text-align: center;
+}
+
+#quote{
+    margin-top: 15px;
+    text-align: center;
+}
+
+hr{
+    width: 65%;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 450px) and (max-width: 530px){
+    .first img{
+        height: 40vh;
+        width: 55vh;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 450px){
+    .first img{
+        height: 30vh;
+        width: 45vh;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 390px){
+    .first img{
+        height: 20vh;
+        width: 35vh;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 521px) {
+    header{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 521px) and (min-width: 320px) {
+    header{
+        font-size: 1.8rem;
+    }
+    header p{
+        font-size: 1rem;
+    }
+}
